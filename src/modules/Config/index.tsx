@@ -17,7 +17,7 @@ const isValid = (code?: string) => {
 function Config({ code, setCode }: { code?: string; setCode: (val: string) => void }) {
   const [codePreview, setCodePreview] = useState(code);
 
-  const handleApply = useCallback(() => setCode(codePreview ?? ''), [codePreview]);
+  const handleApply = useCallback(() => setCode(codePreview ?? ''), [codePreview, setCode]);
 
   return (
     <Card>

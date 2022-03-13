@@ -2,6 +2,9 @@
 
 Test application which allows you to generate a simple form from a specification written in JSON format.
 
+![alt editor](https://user-images.githubusercontent.com/38957865/158076941-b6912b8d-c82c-4e50-ab5c-174503a217b9.png)
+![alt result](https://user-images.githubusercontent.com/38957865/158076939-95147398-6934-4817-92e1-6418ee06afb5.png)
+
 Technologies and libraries used: 
 - React + typescript
 - MaterialUI
