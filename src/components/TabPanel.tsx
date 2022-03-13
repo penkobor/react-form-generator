@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { ReactNode } from 'react';
 
-function TabPanel(props: { value: number; index: number; children: ReactNode }) {
+export const TabPanel = (props: { value: number; index: number; children: ReactNode }) => {
   const { children, value, index, ...other } = props;
 
   return (

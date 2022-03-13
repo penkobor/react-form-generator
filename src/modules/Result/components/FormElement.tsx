@@ -1,7 +1,7 @@
 import { Checkbox, FormControlLabel, OutlinedInput, Radio, RadioGroup } from '@mui/material';
 import { FieldValues, UseFormRegister } from 'react-hook-form';
 import { Component } from '../utils/types';
-import LabeledFormInput from './inputs/FormInput';
+import { LabeledFormInput } from './inputs';
 
 export const FormElement = (component: Component, register: UseFormRegister<FieldValues>) => {
   const { id, fieldName, type, options } = component;

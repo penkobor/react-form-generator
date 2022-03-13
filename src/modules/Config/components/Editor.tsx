@@ -3,8 +3,8 @@ import CodeEditor from '@uiw/react-textarea-code-editor';
 import { useCallback } from 'react';
 import { WindowContent } from '../../../App.styles';
 
-function Editor({ code, setCode }: { code?: string; setCode: (val: string) => void }) {
-  const handleCodeChange = useCallback((e: any) => setCode(e.target.value), []);
+export const Editor = ({ code, setCode }: { code?: string; setCode: (val: string) => void }) => {
+  const handleCodeChange = useCallback((e: any) => setCode(e.target.value), [setCode]);
   return (
     <WindowContent>
       <CodeEditor
@@ -24,5 +24,3 @@ function Editor({ code, setCode }: { code?: string; setCode: (val: string) => vo
     </WindowContent>
   );
 }
-
-export default Editor;

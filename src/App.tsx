@@ -1,9 +1,7 @@
 import { useCallback, useState } from 'react';
 import { EditorWindow, MainWindow, StyledTab, StyledTabs } from './App.styles';
-import TabPanel from './components/TabPanel';
-import Config from './modules/Config';
-import { Description } from './modules/Description';
-import Result from './modules/Result';
+import { TabPanel } from './components';
+import { Description, Config, Result } from './modules';
 import { INITIAL_CODE } from './utils';
 
 function a11yProps(index: number) {

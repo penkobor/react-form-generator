@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { FormCheckboxWrapper } from '../../styles/Result.styles';
 
-function LabeledCheckboxInput({
+export const LabeledCheckboxInput = ({
   id,
   name,
   children
@@ -9,7 +9,7 @@ function LabeledCheckboxInput({
   id: string;
   name: string;
   children: ReactNode;
-}) {
+}) => {
   return (
     <FormCheckboxWrapper key={id}>
       {children}
@@ -17,5 +17,3 @@ function LabeledCheckboxInput({
     </FormCheckboxWrapper>
   );
 }
-
-export default LabeledCheckboxInput;

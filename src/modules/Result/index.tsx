@@ -2,15 +2,15 @@ import { Button } from '@mui/material';
 import { useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { Card } from '../../components';
-import { ActionButtonsGroup, FormBox } from './styles/Result.styles';
+import { ActionButtonsGroup, FormBox } from './styles';
 import { buildForm, capitaliseActionValues, getComponentsFrom } from './utils/helpers';
 
-function Result({ code }: { code?: string }) {
+export const Result = ({ code }: { code?: string }) => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data: any) => alert(JSON.stringify(data));
   const handleReset = useCallback(() => {
     reset();
-  }, []);
+  }, [reset]);
 
   if (!code) return null;
 
@@ -45,5 +45,3 @@ function Result({ code }: { code?: string }) {
     </Card>
   );
 }
-
-export default Result;

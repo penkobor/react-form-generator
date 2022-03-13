@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { FormElement } from '../components/FormElement';
+import { FormElement } from "../components";
 import { Component } from './types';
 
 export const capitaliseActionValues = (parsedCode: any) => {

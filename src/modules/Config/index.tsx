@@ -2,8 +2,8 @@
 import { Alert } from '@mui/material';
 import { useCallback, useState } from 'react';
 import { Card } from '../../components';
-import Editor from './components/Editor';
-import { ActionGroup, Button } from './styles/Config.styles';
+import { Editor } from './components';
+import { ActionGroup, Button } from './styles';
 
 const isValid = (code?: string) => {
   try {
@@ -14,7 +14,7 @@ const isValid = (code?: string) => {
   return true;
 };
 
-function Config({ code, setCode }: { code?: string; setCode: (val: string) => void }) {
+export const Config = ({ code, setCode }: { code?: string; setCode: (val: string) => void }) => {
   const [codePreview, setCodePreview] = useState(code);
 
   const handleApply = useCallback(() => setCode(codePreview ?? ''), [codePreview, setCode]);
@@ -35,5 +35,3 @@ function Config({ code, setCode }: { code?: string; setCode: (val: string) => vo
     </Card>
   );
 }
-
-export default Config;

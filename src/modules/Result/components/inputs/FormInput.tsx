@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { FormInputWrapper } from '../../styles/Result.styles';
 
-function LabeledFormInput({
+export const LabeledFormInput = ({
   id,
   label,
   children
@@ -9,7 +9,7 @@ function LabeledFormInput({
   id: string;
   label: string;
   children: ReactNode;
-}) {
+}) => {
   return (
     <FormInputWrapper key={id}>
       <label>{label}</label>
@@ -17,5 +17,3 @@ function LabeledFormInput({
     </FormInputWrapper>
   );
 }
-
-export default LabeledFormInput;
